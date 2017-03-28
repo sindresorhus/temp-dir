@@ -1,6 +1,6 @@
 {
   "name": "temp-dir",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Get the real path of the system temp directory",
   "license": "MIT",
   "repository": "sindresorhus/temp-dir",
