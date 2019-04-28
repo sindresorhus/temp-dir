@@ -21,15 +21,16 @@
 	],
 	"keywords": [
 		"temp",
-		"tmp",
-		"dir",
 		"tmpdir",
 		"os",
 		"system",
 		"real",
 		"path",
 		"realpath",
-		"resolved"
+		"resolved",
+		"temporary",
+		"directory",
+		"folder"
 	],
 	"devDependencies": {
 		"ava": "^1.4.1",
