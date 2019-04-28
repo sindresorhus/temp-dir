@@ -4,13 +4,13 @@ import test from 'ava';
 import proxyquire from 'proxyquire';
 
 test.serial('ensure the returned filepath is not a symlink', t => {
-	const m = proxyquire('.', {
+	const tempDirectory = proxyquire('.', {
 		os: {
 			tmpdir: () => path.resolve('fixture-symlink')
 		}
 	});
 
-	const fp = path.join(m, 'unicorn');
+	const fp = path.join(tempDirectory, 'unicorn');
 	fs.writeFileSync(fp, '🦄');
 
 	t.is(fp, fs.realpathSync(fp));
@@ -20,6 +20,6 @@ test.serial('ensure the returned filepath is not a symlink', t => {
 });
 
 test.serial('main', t => {
-	const m = require('.');
-	t.true(path.isAbsolute(m));
+	const tempDirectory = require('.');
+	t.true(path.isAbsolute(tempDirectory));
 });
