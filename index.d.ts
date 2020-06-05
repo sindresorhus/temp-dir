@@ -15,4 +15,4 @@ console.log(os.tmpdir());
 */
 declare const tempDirectory: string;
 
-export = tempDirectory;
+export default tempDirectory;
