@@ -1,4 +1,4 @@
-# temp-dir [![Build Status](https://travis-ci.org/sindresorhus/temp-dir.svg?branch=master)](https://travis-ci.org/sindresorhus/temp-dir)
+# temp-dir
 
 > Get the real path of the system temp directory
 
