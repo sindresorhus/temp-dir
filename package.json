@@ -7,11 +7,13 @@
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
 	"type": "module",
+	"exports": "./index.js",
+	"types": "./index.d.ts",
 	"engines": {
-		"node": ">=14"
+		"node": ">=14.16"
 	},
 	"scripts": {
 		"test": "xo && ava && tsd"
