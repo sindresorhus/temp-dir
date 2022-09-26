@@ -15,12 +15,16 @@ $ npm install temp-dir
 ## Usage
 
 ```js
-const tempDirectory = require('temp-dir');
+import temporaryDirectory from 'temp-dir';
 
-console.log(tempDirectory);
+console.log(temporaryDirectory);
 //=> '/private/var/folders/3x/jf5977fn79jbglr7rk0tq4d00000gn/T'
+```
 
-console.log(require('os').tmpdir());
+```js
+import os from 'node:os';
+
+console.log(os.tmpdir());
 //=> '/var/folders/3x/jf5977fn79jbglr7rk0tq4d00000gn/T' // <= Symlink
 ```
 

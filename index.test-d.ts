@@ -1,4 +1,4 @@
 import {expectType} from 'tsd';
-import tempDirectory = require('.');
+import temporaryDirectory from './index.js';
 
-expectType<string>(tempDirectory);
+expectType<string>(temporaryDirectory);
